@@ -53,6 +53,7 @@ header img {
 
 section {
   display: flex;
+  height: 400vh;
   
 }
 
@@ -83,8 +84,8 @@ section div.text {
 .fullimage {
   width: 50vw;
   height: 100vh;
-  position: sticky;
-  position: -webkit-sticky;
+  /* position: sticky;
+  position: -webkit-sticky; */
   top: 0;
  display: flex; 
  object-fit: cover; 
