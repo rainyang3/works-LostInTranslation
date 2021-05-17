@@ -96,6 +96,7 @@ body {
   z-index: 2;
   height: 100vh;
   
+  
 }
 
 h2 {
@@ -214,3 +215,35 @@ div .text {
 }
 
 
+/* CURSOR */
+
+cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    
+    width: 8px;
+    height: 8px;
+    background-color: rgba(242, 104, 49, 1);
+}
+
+.cursor-dot-outline {
+    
+    width: 40px;
+    height: 40px;
+    background-color: rgba(116, 187, 116, 0.5);
+}
+
+html {
+  cursor: none;
+}
