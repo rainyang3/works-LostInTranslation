@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600&display=swap');
 
+::-webkit-scrollbar {
+    width: 0;   /*Remove scrollbar space */
+}
 
 body {
   font-family: 'Titillium Web', sans-serif;
@@ -44,19 +47,6 @@ header img {
   object-fit: contain;
 }
 
-
-
-
-
-
-
-
-section {
-  display: flex;
-  height: 400vh;
-  
-}
-
 /* section.brief {
   height: 425vh;
   
@@ -66,24 +56,16 @@ section:nth-child(odd) {
   flex-direction: row-reverse;
 }
 
-section div.text {
-  width: 50vw;
-  height: 100vh;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  /* display: flex; */
-  /* justify-content: center; */
+div .text {
   align-items: center;
   flex-direction: column;
-  margin-top: 20vh; 
-   padding: 70px; 
+  margin-top: 10vh; 
+  padding: 50px;
+  margin-bottom: 40vh;
 }
 
 
 .fullimage {
-  width: 50vw;
-  height: 100vh;
   /* position: sticky;
   position: -webkit-sticky; */
   top: 0;
@@ -104,29 +86,27 @@ section div.text {
   object-fit: cover;
 }
 
-section div{
-  width: 50vw;
-}
-.scrollingimages{
-  /* width: 50%; */
+.logo{
+  display:inline-block;
   height: 100vh;
-  width: 50vw;
-  /* position: sticky;
-  position: -webkit-sticky; */
-  /* top: 0; */
-  /* display: flex; */
-  /* object-fit: cover; */
-  /* flex-direction: column; */
-  /* background-size: cover;
-  background-position:center; */
-  
-
+  width: 9%;
+}
+.box{
+  display:inline-block;
+  height: 100vh;
+  width: 44%;
+  margin-left: 1.2vw;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  overflow-y: scroll;
 }
 
-
+.box::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
 
 .scroll1img {
-  width: 50vw;
+  /*width: 50vw;*/
   object-fit: fill;
 }
 
