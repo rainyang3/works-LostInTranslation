@@ -96,7 +96,7 @@ div .text {
   height: 100vh;
   width: 44%;
   margin-left: 1.2vw;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  -ms-overflow-style: -ms-autohiding-scrollbar;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
   overflow-y: scroll;
 }
