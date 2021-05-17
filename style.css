@@ -109,7 +109,8 @@ h2 {
 }
 
 p {
-  margin: 5px 0 5px 0;
+  
+  margin: 80px 0 5px 0;
   line-height: 1.8em;
   letter-spacing: .2px;
 }
@@ -133,9 +134,9 @@ p {
 div .text {
   align-items: center;
   flex-direction: column;
-  margin-top: 10vh; 
+  margin-top: 0; 
   padding: 50px;
-  margin-bottom: 40vh;
+  margin-bottom: 0;
   height: 100vh;
 
 }
@@ -144,6 +145,7 @@ div .text {
 
 .scrolls {
   height: 100vh;
+  
 }
 
 .textimage {
@@ -162,8 +164,8 @@ div .text {
   height: 100vh;
   width: 45%;
   margin-left: 1.2vw;
-  -ms-overflow-style: -ms-autohiding-scrollbar;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: -ms-autohiding-scrollbar;  
+  scrollbar-width: none; 
   overflow-y: scroll;
   background-color: rgba(27, 27, 27, .7);
 }
@@ -172,7 +174,7 @@ div .text {
     display: none;  /* Safari and Chrome */
 }
 
-.scroll1img {
+.scrolls {
   /*width: 50vw;*/
   object-fit: fill;
 }
