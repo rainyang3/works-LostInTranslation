@@ -126,9 +126,19 @@ p {
   margin-top: 30px;
   background: none;
   border: none;
-  
   position: fixed;
+  transition-property: transform; 
+    Transition-duration:0.5s; 
+    Transition-timing-function:ease-out; 
+    Transition-delay:0.1s
 }
+
+#rylogo:hover {
+  transform: scale(1.1);   
+}
+/* #rylogo:hover{
+  
+} */
 
 .buttonbox {
   margin-top: 83vh;
