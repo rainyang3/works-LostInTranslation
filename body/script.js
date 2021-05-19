@@ -1,5 +1,5 @@
 var cursor = {
-    delay: 8,
+    delay: 4,
     _x: 0,
     _y: 0,
     endX: (window.innerWidth / 2),
@@ -60,17 +60,17 @@ var cursor = {
         });
   
   
-        // document.addEventListener('mousemove', function(e) {
-        //     // Show the cursor
-        //     self.cursorVisible = true;
-        //     self.toggleCursorVisibility();
+        document.addEventListener('mousemove', function(e) {
+            // Show the cursor
+            self.cursorVisible = true;
+            self.toggleCursorVisibility();
 
-        //     // Position the dot
-        //     self.endX = e.pageX;
-        //     self.endY = e.pageY;
-        //     self.$dot.style.top = self.endY + 'px';
-        //     self.$dot.style.left = self.endX + 'px';
-        // });
+            // Position the dot
+            self.endX = e.pageX;
+            self.endY = e.pageY;
+            self.$dot.style.top = self.endY + 'px';
+            self.$dot.style.left = self.endX + 'px';
+        });
         
         // Hide/show cursor
         document.addEventListener('mouseenter', function(e) {
@@ -125,5 +125,3 @@ var cursor = {
 }
 
 cursor.init();
-
-// cursor code from https://codepen.io/kjbrum/pen/qooQJJ

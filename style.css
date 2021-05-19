@@ -225,7 +225,7 @@ div .text {
 
 /* CURSOR */
 
-cursor-dot,
+.cursor-dot,
 .cursor-dot-outline {
     pointer-events: none;
     position: absolute;
@@ -238,7 +238,12 @@ cursor-dot,
                 transform 0.3s ease-in-out;
 }
 
-
+.cursor-dot {
+  
+  width: 8px;
+  height: 8px;
+  background-color: rgba(129, 0, 245,1);
+}
 
 .cursor-dot-outline {
     
@@ -248,7 +253,7 @@ cursor-dot,
 }
 
 html{
-  cursor:url(/assets/cursororange.png),auto;
+  /* cursor:url(/assets/cursororange.png),auto; */
+  cursor: none;
 }
-
 
