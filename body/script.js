@@ -60,17 +60,17 @@ var cursor = {
         });
   
   
-        document.addEventListener('mousemove', function(e) {
-            // Show the cursor
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
+        // document.addEventListener('mousemove', function(e) {
+        //     // Show the cursor
+        //     self.cursorVisible = true;
+        //     self.toggleCursorVisibility();
 
-            // Position the dot
-            self.endX = e.pageX;
-            self.endY = e.pageY;
-            self.$dot.style.top = self.endY + 'px';
-            self.$dot.style.left = self.endX + 'px';
-        });
+        //     // Position the dot
+        //     self.endX = e.pageX;
+        //     self.endY = e.pageY;
+        //     self.$dot.style.top = self.endY + 'px';
+        //     self.$dot.style.left = self.endX + 'px';
+        // });
         
         // Hide/show cursor
         document.addEventListener('mouseenter', function(e) {

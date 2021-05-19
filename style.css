@@ -238,20 +238,17 @@ cursor-dot,
                 transform 0.3s ease-in-out;
 }
 
-.cursor-dot {
-    
-    width: 8px;
-    height: 8px;
-    background-color: rgba(242, 104, 49, 1);
-}
+
 
 .cursor-dot-outline {
     
     width: 40px;
     height: 40px;
-    background-color: rgba(116, 187, 116, 0.5);
+    background-color: rgba(129, 0, 245,.3);
 }
 
-html {
-  cursor: none;
+html{
+  cursor:url(/assets/cursororange.png),auto;
 }
+
+
